@@ -1,0 +1,56 @@
+body {
+    background-attachment: fixed;
+    background-image: url(../Media/bg.png);
+    background-size: cover;
+}
+header, nav, section, article, aside, footer {
+    display: block;
+}
+p{
+    color: #FFFFFF;
+    text-align: center;
+}
+nav {
+    background-size: cover;
+    background: -webkit-linear-gradient(top, rgb(206, 55, 219),rgb(101, 116, 255));
+    border-radius: 10px;
+    text-align: center;
+}
+#Menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#Menu ul li{
+    display: inline-block;
+}
+#Menu ul li a{
+    color: #FFFFFF;
+    display: block;
+    padding: 20px 70px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+#Menu ul li a:hover{
+    background: -webkit-linear-gradient(top, rgb(247, 44, 156),rgb(187, 78, 250));
+}
+#Nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+}
+#Nav ul li{
+    display: inline-block;
+}
+#Nav ul li a{
+    color: #FFFFFF;
+    display: block;
+    padding: 20px 60px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+#Nav ul li a:hover{
+    background: -webkit-linear-gradient(top, rgb(247, 44, 156),rgb(187, 78, 250));
+}

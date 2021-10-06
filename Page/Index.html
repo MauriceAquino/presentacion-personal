@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>
+        <link rel="icon" type="image/svg+xml" href="./Media/favicon.svg" />
+        <link rel="stylesheet" href="./CSS/Style.css">
+        <style>
+            /*Zoo IMG*/
+            .zoo-img {
+                border-radius: 10px;
+            }
+            .zoo-item {
+                max-width: 21vw;
+                max-height: 28vw;
+                left: 10vw;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="rainbow"> Maurice </h1>
+        <nav class="menu">
+            <ol>
+                <li class="menu-item"><a href="./Index.html">Inicio</a></li>
+                <li class="menu-item"><a href="./Programacion.html">Programacion</a></li>
+                <li class="menu-item"><a href="./Dibujo.html">Dibujo</a></li>     
+            </ol>
+        </nav>
+        <video autoplay muted loop="loop" id="video_background" preload="auto">
+            <source src="./Media/BG.mp4" type="video/mp4" />
+        </video>
+        <div
+            class="zoo-item"
+            data-zoo-image="./Media/Photo.jpg"
+            data-zoo-scale="1.1"
+            data-zoo-move="false"
+            data-zoo-over="true"
+            data-zoo-cursor="false"
+            data-zoo-autosize="auto"
+            style="background-position: center;">
+        </div>
+        <div class="card">
+            <div class="pInfoTitle">¿Quién soy yo?</div>
+            <div class="pInfo">Soy Mauricio Salvador Aquino Navas, un chico muy interesado en aprender nuevas cosas cada día y siempre seguir adelante buscando la autosuperación.
+                Soy alguien que se esfuerza por dar el máximo en todas las áreas en las que me encuentro, siempre busco ayudar a los que lo necesitan y también motivarlos a seguir adelante. </div>
+        </div>
+        <div class="space1"></div>
+        <div class="cards">
+            <div class="cardTitles">¿Qué intereses tengo?</div>
+            <div class="left-images1 column">
+                <img class="zooImg" src="./Media/s1.jpeg" alt="Programación">
+                <img class="zooImg" src="./Media/s3.jpeg" alt="Dibujo">
+                <img class="zooImg" src="./Media/s5.jpeg" alt="Música">
+                <img class="zooImg" src="./Media/s7.jpeg" alt="Volleyball">
+                <img class="zooImg" src="./Media/s9.jpeg" alt="Historia">
+            </div>
+            <br>
+            <div class="cardInfo column">Me gustan muchas cosas bastante variadas; particularmente tengo un gran gusto por la programación, las matemáticas, el dibujo y cabe mencionar que tengo un gran deseo de aprender robótica, aunque lastimosamente no tengo el placer de conocer mucho sobre esa área, pero espero hacerlo pronto.
+            <br>Entre algunas otras cosas podría mencionar también la música (no puedo tocar ningún instrumento, pero toda la lógica y teoría detrás de el funcionamiento de ella me parece un tema excepcional), también dentro de mis intereses en cuanto a deportes podría mencionar que me llama mucho la atención el basketball, el volleyball y en una mucho menor proporción, el fútbol (soccer).<br>
+            <br>También me veo muy atraído por temas como el universo, la física, historia, y muchas otras áreas de las ciencias que estudian el funcionamiento de nuestro mundo y universo, así como también aquellas que indagan en nuestro pasado y buscan explorar nuevos horizontes.</div>
+            <div class="right-images1 column">
+                <img class="zooImg" src="./Media/s2.jpeg" alt="Matemáticas">
+                <img class="zooImg" src="./Media/s4.jpeg" alt="Robótica">
+                <img class="zooImg" src="./Media/s6.jpeg" alt="Basketball">
+                <img class="zooImg" src="./Media/s8.jpeg" alt="Universo observable">
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="footer">Mauricio Aquino
+            <br>Main developer © 
+        </div>
+        <script>
+            $('.zoo-item').ZooMove({   
+            cursor:'false',
+            scale:'1.1',
+            move:'false',
+            over:'true',
+            autosize:'true'
+            });
+        </script>
+    </body>
+</html>

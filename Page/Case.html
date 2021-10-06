@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Case checker</title>
+        <style>
+            body {
+                font-size: 35px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.500);
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" id="text">
+        <button onclick="checkText()">Check your text</button>
+        <br><br>
+        Hello everyone, your text is written in: 
+        <p id="showText"></p>
+        <script>   
+            function swapCase(text){
+                text = String(text).trim();
+                const cases = {
+                    "lower": /^[a-z ]+$/,
+                    "upper": /^[A-Z ]+$/,
+                    "upperLower": /^[A-Za-z ]+$/,
+                    "num":  /^[0-9 ]+$/,
+                    "lowerNum": /^[a-z0-9 ]+$/,
+                    "upperNum": /^[A-Z0-9 ]+$/,
+                    "upperLowerNum": /^[A-Za-z0-9 ]+$/,
+                    "sC": /^[ ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "lowerSC": /^[a-z ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "upperSC": /^[A-Z ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "upperLowerSC": /^[A-Za-z ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "numSC":  /^[0-9 ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "lowerNumSC": /^[a-z0-9 ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "upperNumSC": /^[A-Z0-9 ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/,
+                    "upperLowerNumSC": /^[A-Za-z0-9 ,!@#$%^&*()-=_+.`~≈ç√∫˜µ≤≥÷åß∂ƒ©˙∆˚¬…æœ∑´®†¥¨ˆøπ“‘«¡™£¢∞§¶•ªº–≠<>;:'"{}|]+$/
+                };
+                if(cases.lower.test(text)){
+                    return "0";
+                }
+                if(cases.upper.test(text)){
+                    return "1";
+                }
+                if(cases.upperLower.test(text)){
+                    return "2";
+                }
+                if(cases.num.test(text)){
+                    return "3";
+                } 
+                if(cases.lowerNum.test(text)){
+                    return "4";
+                }
+                if(cases.upperNum.test(text)){
+                    return "5";
+                }
+                if(cases.upperLowerNum.test(text)){
+                    return "6";
+                }
+                if(cases.sC.test(text)){
+                    return "7";
+                }
+                if(cases.lowerSC.test(text)){
+                    return "8";
+                }
+                if(cases.upperSC.test(text)){
+                    return "9";
+                }
+                if(cases.upperLowerSC.test(text)){
+                    return "10";
+                }
+                if(cases.numSC.test(text)){
+                    return "11";
+                } 
+                if(cases.lowerNumSC.test(text)){
+                    return "12";
+                }
+                if(cases.upperNumSC.test(text)){
+                    return "13";
+                }
+                if(cases.upperLowerNumSC.test(text)){
+                    return "14";
+                }
+                return -1;
+            }
+            function checkText(){
+                var text = document.getElementById("text").value;
+                var answer = swapCase(text);
+
+                if (answer == "0") {
+                    document.getElementById("showText").innerHTML = "Your text is in lower case!";
+                } else if (answer == "1"){
+                    document.getElementById("showText").innerHTML = "Your text is in upper case!";
+                } else if (answer == "2"){
+                    document.getElementById("showText").innerHTML = "Your text is in lower and upper case!";
+                } else if (answer == "3"){
+                    document.getElementById("showText").innerHTML = "Your text are numbers!";
+                } else if (answer == "4") {
+                    document.getElementById("showText").innerHTML = "Your text is in lower case and has numbers!";
+                } else if (answer == "5"){
+                    document.getElementById("showText").innerHTML = "Your text is in upper case and has numbers!";
+                } else if (answer == "6"){
+                    document.getElementById("showText").innerHTML = "Your text is in lower and upper case with numbers!";
+                } else if (answer == "7") {
+                    document.getElementById("showText").innerHTML = "Your text are special characters!";
+                } else if (answer == "8"){
+                    document.getElementById("showText").innerHTML = "Your text is in lower case with special characters!";
+                } else if (answer == "9"){
+                    document.getElementById("showText").innerHTML = "Your text is in upper case with special characters!";
+                } else if (answer == "10"){
+                    document.getElementById("showText").innerHTML = "Your text is in lower and upper case with special characters!";
+                } else if (answer == "11") {
+                    document.getElementById("showText").innerHTML = "Your text are numbers and special characters!";
+                } else if (answer == "12"){
+                    document.getElementById("showText").innerHTML = "Your text is in lower case and has numbers with special characters!";
+                } else if (answer == "13"){
+                    document.getElementById("showText").innerHTML = "Your text is in upper case and has numbers with special characters!";
+                } else if (answer == "14"){
+                    document.getElementById("showText").innerHTML = "Your text is in lower and upper case with numbers and also special characters!";
+                } else {
+                    document.getElementById("showText").innerHTML = "There's no text!";
+                }
+            }
+        </script>
+    </body>
+</html>

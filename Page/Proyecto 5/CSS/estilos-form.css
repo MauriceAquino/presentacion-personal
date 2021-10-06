@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-attachment: fixed;
+    background-image: url(../Media/wp2570965.jpg);
+    background-size: cover;
+}
+
+.container .form .form-header .form-title {
+    font-size: 30mm;
+    font-family: Roboto;
+    text-shadow: rgb(133, 79, 233) 7px 7px 7px;
+    color:rgb(26, 224, 26);
+    text-align: center;
+    padding: 14px 0;
+
+}
+
+
+.container .form {
+    background: rgba(0,0,0,.6);
+    width: 90%;
+    max-width: 650px;
+    margin: auto;
+    padding: 5px 35px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 3px;
+}
+
+.container .form .form-label {
+    display: block;
+    color: #00ffaa;
+    font-size: 20px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.container .form .form-input, .form-textarea{
+    background: rgba(0,0,0,.4);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #18e205;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:white;
+    font-family: Roboto;
+}
+
+.container .form .form-password{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #18e205;
+    width: 70%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:white;
+    font-family: Roboto;
+}
+
+.container .form .form-button{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #18e205;
+    width: 29%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:white;
+    font-family: Roboto;
+}
+
+.container .form .form-input, .form-select{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #18e205;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:white;
+    font-family: Roboto; 
+}
+
+.container .form .form-input, .form-calendar{
+    background: rgba(0,0,0,.7);
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #18e205;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    font-size: 14px;
+    color:white;
+    font-family: Roboto;
+}
+
+.container .form .btn-submit {
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: -webkit-linear-gradient(top, rgb(42, 165, 12),rgb(33, 243, 78));
+    font-size: 16px;
+    border: #000;
+    color: #fff;
+    padding: 15px 290px ;
+    cursor: pointer;
+    transition: all .5s ease;
+    text-align: center;
+}
+
+.container .form .btn-submit:hover {
+    background: -webkit-linear-gradient(top, rgb(206, 55, 219),rgb(101, 116, 255));
+    transition: all .5s ease;
+}
+
+

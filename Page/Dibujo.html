@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dibujo</title>        
+        <link rel="icon" type="image/svg+xml" href="./Media/favicon.svg" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/zoomove/1.2.1/zoomove.min.js"></script>        
+        <link rel="stylesheet" href="./CSS/Style.css">
+        <link rel="stylesheet" href="./CSS/Dibujos-outline.css">
+    </head>
+    <body>
+        <p class="draw">Dibujos</p> 
+        <nav class="menu">
+            <ol>
+                <li class="menu-item"><a href="./Index.html">Inicio</a></li>
+                <li class="menu-item"><a href="./Programacion.html">Programacion</a></li>
+                <li class="menu-item"><a href="./Dibujo.html">Dibujo</a></li>
+            </ol>
+        </nav>
+        <video autoplay muted loop="loop" id="video_background" preload="auto">
+            <source src="./Media/BG.mp4" type="video/mp4" />
+        </video>
+        <div class="gallery">
+            <div class="row">
+                <div class="galleryTitle">¿Cómo fueron mis primeros dibujos?</div>
+                <div class="row1">
+                    <center><div
+                    id="dog"
+                    class="zoo-item"
+                    data-zoo-image="./Media/Dibujos/1.jpg"
+                    data-zoo-scale="2"
+                    data-zoo-move="true"
+                    data-zoo-over="false"
+                    data-zoo-cursor="false"
+                    data-zoo-autosize="auto"
+                    style="background-position: center;">
+                    </div></center> 
+                </div>
+                <div class="galleryDescription row1" id="descp1">
+                    No tengo registro de mis primeros dibujos, pero si tengo este que hice hace como 4 años. <br>
+                    Considero que es un buen ejemplo, porque fue uno de los primeros dibujos a los que les puse mucho empeño y dedicación.
+                </div>
+            </div>
+            <div class="row">
+                <div class="galleryTitle">Dibujos simples</div><br>
+                <div class="row2" id="i1r2">
+                   <center><div
+                    id="tree"
+                    class="zoo-item"
+                    data-zoo-image="./Media/Dibujos/4.jpg"
+                    data-zoo-scale="2"
+                    data-zoo-move="true"
+                    data-zoo-over="false"
+                    data-zoo-cursor="false"
+                    data-zoo-autosize="auto"
+                    style="background-position: center;">
+                    </div></center> 
+                </div>
+                <div class="row2" id="i2r2">
+                    <center><div
+                    id="mario"
+                    class="zoo-item"
+                    data-zoo-image="./Media/Dibujos/3.jpg"
+                    data-zoo-scale="2"
+                    data-zoo-move="true"
+                    data-zoo-over="false"
+                    data-zoo-cursor="false"
+                    data-zoo-autosize="auto"
+                    style="background-position: center;">
+                    </div></center>
+                </div>
+                <div class="row2" id="i3r2">
+                    <center><div
+                    id="deadpool"
+                    class="zoo-item"
+                    data-zoo-image="./Media/Dibujos/2.jpg"
+                    data-zoo-scale="2"
+                    data-zoo-move="true"
+                    data-zoo-over="false"
+                    data-zoo-cursor="false"
+                    data-zoo-autosize="auto"
+                    style="background-position: center;">
+                    </div></center>
+                </div>
+                <div class="galleryDescription" id="descp2">
+                    Estos, son algunos de los dibujos que en ocaciones solía hacer para mantenerme entretenido cuando no teniamos clases (lo que no era muy común). <br>
+                    Eran pequeñas obras usando ya sea la imaginación (como el árbol) o copiando una imagen base (como en el caso de Mario y Deadpool).
+                </div>
+            </div>
+            <div class="row">
+                <div class="galleryTitle" id="title3">¿Hubieron mejorías?</div><br>
+                <div class="galleryItems3 row3i1">
+                    <div
+                        id="wolf"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/5.jpg"
+                        data-zoo-scale="2.5"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                    </div>
+                </div>
+                <div class="galleryItems3 row3i2">
+                    <div
+                        id="lilGroot"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/6.jpg"
+                        data-zoo-scale="2.5"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                    </div>
+                </div>
+                <div class="galleryItems3 row3i3">
+                    <div
+                        id="lilGroot2"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/7.jpg"
+                        data-zoo-scale="2.5"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                    </div>
+                </div>
+                <div class="galleryDescription" id="descp3">
+                    Desde mi punto de vista, estos son algunos dibujos donde yo sentí que estaba mejorando a pesar de no tener una constante práctica, aún me faltaba mucho, pero es muy agradable sentir que se avanza. 
+                </div>
+            </div>
+            <div class="row">
+                <div class="galleryTitle">Algunos usos simples</div><br>
+                <div class="galleryItems4 row4i1">
+                    <div
+                        id="bear"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/8.jpeg"
+                        data-zoo-scale="2.5"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                    </div>
+                </div>
+                <div class="galleryItems4 row4i2">
+                    <div
+                        id="einstein"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/9.jpeg"
+                        data-zoo-scale="2.5"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                    </div>
+                </div>
+                <div class="galleryDescription" id="descp4">Estos son dos pequeños ejemplos de dibujos que en ocasiones suelo hacer para unidades o pequeñas que hago por parte de mi escuela.<br>
+                En el caso de el dibujo de Einstein use una <a class="links" target="_blank" href="https://www.pinturayartistas.com/como-dibujar-con-cuadricula-paso-a-paso/">técnica de cuadriculado</a> para poder dibujarlo, en lo personal me parece una execelente tecnica par aprender a hacer trazos.</div>
+            </div>
+            <div class="row">
+                <div class="galleryTitle">Mi más reciente dibujo</div><br>
+                <div class="galleryItem5 row5">
+                    <div
+                    id="spider-man"
+                    class="zoo-item"
+                    data-zoo-image="./Media/Dibujos/10.jpg"
+                    data-zoo-scale="3"
+                    data-zoo-move="true"
+                    data-zoo-over="false"
+                    data-zoo-cursor="false"
+                    data-zoo-autosize="auto"
+                    style="background-position: center;">
+                    </div>
+                </div>
+                <div class="galleryDescription row5" id="descp5">Considero este como mi más reciente dibujo, debido a que ha sido el ultimo al que le he dedicado una buena cantidad de tiempo, aunque he de decir que lo hice hace varios meses, y no termine de hacerle todos los detalles, pero me alegro el hecho de dibujar algo que era en 3D, dado que casi siempre buscaba imagenes en 2D para dibujar, por lo que dibujar este personaje. <br> Ya no he logrado hacer el suficiente tiempo como para volver a dedicarme toda una tarde a dibujar, pero en definitiva quiero hacerlo nuevamente pronto.</div>
+            </div>
+            <div class="row">
+                <div class="galleryTitle">¿Mi mejor dibujo?</div>
+                <div class="galleryDescription" style="text-align: center;">
+                    ¿Quieres ver mi mejor dibujo? 
+                    <br>
+                    <button id="fadeButton">Click me!</button> 
+                    <script>
+                        $(document).ready(function(){
+                        $("#fadeButton").click(function(){
+                            $(".hiddenImg").fadeToggle(1000);
+                            $("#fadeButton").fadeToggle(1000)
+                        });
+                        $(".story").click(function(){
+                            $(".storyHidden").fadeIn(500);
+                            $(".story").fadeOut(500)
+                        });
+                        $(".close").click(function(){
+                            $(".storyHidden").fadeOut(500);
+                            $(".story").fadeIn(500)
+                        });
+                        });
+                    </script>
+                </div>
+                <div class="hiddenImg" style="display: none;">
+                    <div class="galleryItems6 row6i1">
+                        <div
+                        id="bones"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/11.jpeg"
+                        data-zoo-scale="3"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                        </div>
+                    </div>
+                    <div class="galleryItems6 row6i2">
+                        <div
+                        id="bones1"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/12.jpeg"
+                        data-zoo-scale="4"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                        </div>
+                    </div>
+                    <div class="galleryItems6 row6i3">
+                        <div
+                        id="bones2"
+                        class="zoo-item"
+                        data-zoo-image="./Media/Dibujos/13.jpeg"
+                        data-zoo-scale="5"
+                        data-zoo-move="true"
+                        data-zoo-over="false"
+                        data-zoo-cursor="false"
+                        data-zoo-autosize="auto"
+                        style="background-position: center;">
+                        </div>
+                    </div>
+                    <div class="galleryDescription" id="descp6">Existe toda una historia detras de este dibujo <span class="story">[...]</span><span class="storyHidden" style="display: none;"><br><br>Todo comienza un 23 de diciembre, por la noche decidí que el día siguiente me dedicaría a hacer el dibujo con más detalles de mi vida. Así empezó mi día desde muy temprano, haciendo el boceto inicial (primera imagen), y poco a poco haciendo un trabajo muy minucioso en cada parte que hacía, a eso del mediodía tome una pausa sintiéndome satisfecho de los resultados obtenidos hasta el momento (segunda imagen). Luego de eso, por la tarde continué dibujando hasta la noche, en definitiva me vi atrapado en la pasión de dibujar aquello que me había propuesto, mientras escuchaba mi música favorita. Antes de acostarme los resultados que obtuve fueron muy gratificantes (tercera imagen), pero lastimosamente no todas las historias tienen un final feliz. Algunos días después mi mamá vió el dibujo y considero que era algo diabólico, por lo que lo destruyo y desecho, fue triste en su momento, pero siempre me quedo la satisfacción de que me hubiera quedado como me quedó. <span class="close">[...]</span><br><br></span> pero la razón principal que me lleva a tomarlo como mi mejor dibujo, es la cantidad de detalles que logre hacerle y el hecho que me demostre que con tiempo y dedicación podía hacer cualquier dibujo,</div>
+                </div>
+            </div>
+            <div class="footer">Mauricio Aquino
+                <br>Main developer © 
+            </div>
+        </div>
+        
+        <script>
+            $('.zoo-item').ZooMove({   
+            cursor:'false',
+            scale:'2',
+            move:'true',
+            over:'false',
+            autosize:'true'
+            });
+        </script>
+    </body>
+</html>

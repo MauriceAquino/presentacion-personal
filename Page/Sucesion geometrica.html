@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sucesiones</title>
+        <style>
+            body {
+                font-size: 35px;
+                color: white;
+                background-color: rgba(0, 0, 0, 0.500);
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="suceGeo();" id="myBtn">Calcular una sucesion geométrica</button>
+        <button onclick="suceArit();" id="myBtn">Calcular una sucesion aritmética</button>
+
+        <p id="demo"></p>
+
+        <script>
+            function suceGeo() {
+                var a1 = parseInt(prompt("Ingresa el numero inicial de la sucesion"));
+                var r = parseInt(prompt("Ingresa la razon de la sucesion"));
+                var aN = parseInt(prompt("Ingresa la posicion del numero que buscas"));
+                var result;
+                
+                result = 1*(r**(aN-1));
+                document.getElementById("demo").innerHTML = result;
+            }
+            function suceArit() {
+                var a1 = parseInt(prompt("Ingresa el numero inicial de la sucesion"));
+                var d = parseInt(prompt("Ingresa la diferencia de la sucesion"));
+                var aN = parseInt(prompt("Ingresa la posicion del numero que buscas"));
+                var result;
+                
+                result = a1+(aN-1)*d;
+                document.getElementById("demo").innerHTML = result;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Bungee+Shade");
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+
+body {
+    background-color: #151515;
+    font-family: "Bonheur Royale", cursive;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.zoo-item {
+    border-radius: 20px; 
+}
+.gallery {
+    width: 100%;
+    margin: 0;
+}
+.galleryTitle {
+    position: relative;
+    font-size: 8vw;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(45deg,rgb(45, 255, 3),rgb(8, 214, 241));
+    text-align: center;
+    margin-top: 2vw;
+}
+.galleryDescription {
+    position: relative;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 2vw;
+    text-align: justify;
+}
+a:link {
+    color: white;
+}
+a:visited {
+    color: rgb(88, 228, 88);
+}
+a:hover {
+    color: rgb(255, 173, 105);
+}
+a:active {
+    color: rgb(0, 102, 255);
+}
+/*row 1*/
+.row1 {
+    float: left;
+    padding: 2vw;
+}
+#descp1 {
+    width: 60%;
+    padding-top: 5vw;
+    padding-left: 0;
+    padding-bottom: 5vw;
+}
+#dog {
+    position: relative;
+    width: 30vw;
+    height: 23vw; 
+    z-index: 10; 
+    padding: 2vw;
+}
+/*row 2*/
+.row2 {
+    float: left;
+    padding: 3vw;
+    width: 33.3%;
+    height: 30vw;
+}
+#tree {
+    width: 30vw;
+    height: 23vw;
+    margin-left: 3vw;
+    z-index: 10; 
+}
+#mario {
+    width: 20vw;
+    height: 23vw;
+    margin-left: 8vw;
+    z-index: 10; 
+}
+#deadpool {
+    width: 20vw;
+    height: 23vw;
+    margin-left: 3vw;
+    z-index: 10; 
+}
+#descp2 {
+    position: relative;
+    left: 10vw;
+    width: 80vw;
+}
+/*row 3*/
+.galleryItems3 {
+    float: left;
+    padding: 2vw;
+    height: 30vw;
+}
+.row3i1 {
+    width: 30%;
+}
+.row3i2 {
+    width: 35%;
+    margin-left: -2vw;
+}
+.row3i3 {
+    width: 35%;
+    margin-left: -2vw;
+}
+#wolf {
+    width: 20vw;
+    height: 23vw;
+    margin-left: 5vw;
+    z-index: 10; 
+}
+#lilGroot {
+    width: 30vw;
+    height: 23vw;
+    z-index: 10; 
+}
+#lilGroot2 {
+    width: 30vw;
+    height: 23vw;
+    z-index: 10; 
+}
+#descp3 {
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+}
+/*row 4*/
+.galleryItems4 {
+    float: left;
+    padding: 2vw;
+    height: 30vw;
+    width: 50%;
+}
+#bear {
+    width: 20vw;
+    height: 25vw;
+    margin-left: 25vw;
+    z-index: 10;
+}
+#einstein {
+    width: 20vw;
+    height: 25vw;
+    margin-right: 25vw;
+    z-index: 10;
+}
+#descp4 {
+    position: relative;
+    width: 80vw;
+    left: 10vw;
+}
+/*row 5*/
+.row5 {
+    float: left;
+    padding: 1vw;
+}
+.galleryItem5 {
+    width: 40%;
+}
+#spider-man {
+    width: 35vw;
+    height: 35vw;
+    margin-left: 1vw;
+}
+#descp5 {
+    width: 55vw;
+}
+/*row 6*/
+.galleryItems6 {
+    float: left;
+    padding: 2vw;
+    height: 45vw;
+    width: 33.3%;
+}
+#bones {
+    width: 30vw;
+    height: 40vw;
+    z-index: 10;
+}
+#bones1 {
+    width: 30vw;
+    height: 40vw;
+    z-index: 10;
+}
+#bones2 {
+    width: 30vw;
+    height: 40vw;
+    z-index: 10;
+}
+#descp6 {
+    width: 80vw;
+    left: 10vw;
+}
+#fadeButton {
+    font-size: 2vw;
+    border-radius: 15vw;
+    padding: 1vw;
+    background: linear-gradient(45deg,#ff839d, #f50b9a);
+    font-family: "Bungee Shade";
+    font-weight: 600;
+    border: none;
+}
+.story:hover,.close:hover {
+    text-decoration: underline;
+}
+.storyHidden {
+    text-shadow: 5px 5px 10px rgb(0, 146, 19);
+    background: rgba(0, 0, 0, 0.600);
+}
